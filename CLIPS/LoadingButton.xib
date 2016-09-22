@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoadingButton" customModule="CLIPS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFa-Io-fRy" userLabel="Background">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUq-fM-yZZ" userLabel="Loaded View">
+                            <color key="backgroundColor" red="1" green="0.24913629070000001" blue="0.56312541019999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a2c-hV-TAx" userLabel="LoadingView">
+                            <color key="backgroundColor" red="1" green="0.45809276391428566" blue="0.68470243195625136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="262.5" id="9z5-Ra-kCa"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="AUq-fM-yZZ" firstAttribute="leading" secondItem="VFa-Io-fRy" secondAttribute="leading" id="McY-tM-1aQ"/>
+                        <constraint firstAttribute="bottom" secondItem="a2c-hV-TAx" secondAttribute="bottom" id="NRm-26-0x5"/>
+                        <constraint firstAttribute="trailing" secondItem="a2c-hV-TAx" secondAttribute="trailing" id="Ztt-cg-cey"/>
+                        <constraint firstItem="AUq-fM-yZZ" firstAttribute="top" secondItem="VFa-Io-fRy" secondAttribute="top" id="emA-39-yUV"/>
+                        <constraint firstAttribute="bottom" secondItem="AUq-fM-yZZ" secondAttribute="bottom" id="lUc-n1-iYf"/>
+                        <constraint firstAttribute="trailing" secondItem="AUq-fM-yZZ" secondAttribute="trailing" id="sKb-Tc-yMo"/>
+                        <constraint firstItem="a2c-hV-TAx" firstAttribute="top" secondItem="VFa-Io-fRy" secondAttribute="top" id="yaa-dm-ccR"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jbs-eg-6f3">
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VFa-Io-fRy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AQ1-Pa-nqY"/>
+                <constraint firstAttribute="bottom" secondItem="VFa-Io-fRy" secondAttribute="bottom" id="H0m-iF-pL5"/>
+                <constraint firstItem="jbs-eg-6f3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Yxq-ia-aj2"/>
+                <constraint firstItem="VFa-Io-fRy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eRX-Fj-UbO"/>
+                <constraint firstAttribute="trailing" secondItem="VFa-Io-fRy" secondAttribute="trailing" id="mE1-we-zvK"/>
+                <constraint firstItem="jbs-eg-6f3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="ssb-Bi-lPS"/>
+                <constraint firstAttribute="trailing" secondItem="jbs-eg-6f3" secondAttribute="trailing" constant="20" id="tgf-QJ-ZHQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="VFa-Io-fRy" id="0Sj-Qv-AWe"/>
+                <outlet property="loadedView" destination="AUq-fM-yZZ" id="aFp-gq-Mez"/>
+                <outlet property="loadingView" destination="a2c-hV-TAx" id="WPL-7z-GQK"/>
+                <outlet property="loadingViewWidth" destination="9z5-Ra-kCa" id="Aff-vJ-qTe"/>
+                <outlet property="titleLabel" destination="jbs-eg-6f3" id="FlV-lZ-lwB"/>
+            </connections>
+            <point key="canvasLocation" x="157.5" y="-64"/>
+        </view>
+    </objects>
+</document>
